@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Marissa Lerer" />
+	<meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+		<title>ReelTrend: Emotional Analytics for the Film Industry.</title>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://legacy.launchrock.com/api/lr.api.0.2.css">
+		<script src="http://legacy.launchrock.com/api/lr.api.0.5-min.js"></script>
+		<style type="text/css">
+			html, body{
+				width: 100%;
+				height: 100%;
+			}
+			
+			body{
+				background: url(images/subtle_zebra_3d.png);
+				text-align: center;
+				font-size: 62.5%; font-family:"Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif; 
+			}
+			
+			p{
+				font-size: 22px; letter-spacing: -.05em;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.fun{
+				font-family: "Satisfy","Helvetica Neue",Helvetica,Arial,sans-serif; color:#ec5f00; 
+			}
+			
+			#lrcontent{
+			
+			width: 550px;
+background: none;
+padding: 20px 20px 1px 20px;
+position: relative;
+color: #333;
+font-family:"Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif; 
+margin: 0 auto;
+font-size: 14px;
+}
+
+#lrcontent #makea{display: none;}
+
+#lrcontent #email {
+border: 0;
+font: 14px "Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif;
+width: 400px;
+float: left;
+color: #333;
+margin: 5px 7px 5px 0;
+padding: 5px 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+outline: none;
+background: #d5cdc8;
+}
+
+#lrcontent #description {
+text-align: left;
+margin-bottom: 0px;
+}
+
+#lrcontent p {
+color: #333;
+font-size: 13px;
+}
+		</style>
+	</head>
+	<body>
+		<img src="images/splashLogo.png" />
+	<p><span class="fun">Emotional</span> Analytics for the film industry</p>
+	
+	<div id="container"></div>
+
+
+<script>
+$(document).ready(function(){
+    LR.lrInstance = new LrInstance('container',{
+
+        tagLine: "Emotional analytics about the film industry",
+        description: "Movies evoke emotions. Moviegoers are broadcasting how they feel about films every second of every day, but it’s not in polls or focus groups, it’s scattered across the social web. Our product captures these conversations. It allows you focus your efforts and keeps you on top of the emotional pulse of your audience. ReelTrend is emotional and actionable insights about the film industry presented intuitively.",
+        refCodeUrl: "http://reeltrend.com/?ref=",
+        lrDomain: "reeltrend.com",
+        apiKey: "466c12434051bbdb1491c79f8306b750",
+        inviteList: "Launching soon. Enter your email to join our invite list:"
+    });        
+
+    // Handles events related to signup form, form validations
+    // and submitting the form to the server:
+    LR.signupForm = new SignupForm({
+        secondaryPostLocation: ""
+    });
+
+
+    // Handles rendering the post submit content:
+    LR.postSubmit = new PostSignupForm('pagesubmit',{
+        twitterHandle: "ReelTrend",
+        twitterMessage: "ReelTrend is launching soon and I'm one of the first in line! Join me. #launch",
+        newUserHeaderText: "Thanks! Want to get an early invitation?",
+        newUserParagraphText: "Invite at least 3 friends using the link below. The more friends you invite, the sooner you'll get access!<br/><br/>To share with your friends, click 'Recommend', 'Tweet' and 'Invite by Email':",
+        newUserParagraphText3: "Or copy and paste the following link to share wherever you want!",
+        returningUserHeaderText: "Welcome Back!",
+        returningUserParagraphText: "Invite at least 3 friends using the link below. The more friends you invite, the sooner you'll get access!<br/><br/>To share with your friends, click 'Recommend', 'Tweet' and 'Invite by Email':",
+        returningUserParagraphText3: "Or copy and paste the following link to share wherever you want!",
+        statsPreText: "Your live stats: ",
+        footerLinks: "<a href='http://twitter.com/ReelTrend'>Follow Us on Twitter</a> | <a href='http://https://www.facebook.com/pages/ReelTrend/374703469221596'>Like Us on Facebook</a>"
+,showDescription: true,
+showTagLine: true,
+showHeaderText: true,
+showParagraphText: true,
+showStats: true,
+showShareButtons: true,
+showFooterLinks: true    });
+
+
+});
+
+    </script>
+    
+    </body>
+</html>
