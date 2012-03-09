@@ -7,7 +7,8 @@
 	<script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
 	<script type="text/javascript" src="js/selectToUISlider.jQuery.js"></script>
 	<link rel="stylesheet" href="css/reeltrend/ui-1.8.18.custom.css" type="text/css" />
-	<link rel="Stylesheet" href="css/ui.slider.extras.css" type="text/css" />
+	<link rel="stylesheet" href="css/ui.slider.extras.css" type="text/css" />
+	<link rel="stylesheet" href="css/screen.css" type="text/css" />
 	
 <script src="highcharts.js"></script>
 <script src="charts.js"></script>
@@ -27,152 +28,11 @@
      
     </style>
 
-
+<!--
 <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'> -->
 
-	<style type="text/css">
-		body, html{width: 100%; height: 100%; margin: 0; padding: 0;}
-		
-		body {font-size: 62.5%; font-family:"Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif; }
-		
-		fieldset { border:0; margin: -20px 50px 100px 50px; height: 3em;}	
-		fieldset a{border:none;}
-		label {font-weight: normal; float: left; margin-right: .5em; font-size: 1.1em;}
-		select {margin-right: 1em; float: left; display: none;}
-		.ui-slider {clear: both; top: 5em;}
-			body{
-				width: 100%;
-				height: 100%;
-				margin: 0;
-				padding: 0;
-				background: url(images/subtle_zebra_3d.png);
-			}
-			
-			p{
-				margin: 0 40px;
-				font-size: 16px;
-			}
-			
-			#wrap{
-				width: 515px;
-				height: 100%;
-				min-height: 900px;
-				margin: 0 auto;
-				background: url(images/wrapBg.png) repeat-y;
-				position: relative;
-			}	
-			
-			#logo{
-				background: url(images/logo.png) no-repeat;
-				position: absolute;
-				left: -50px;
-				width:120px;
-				height: 117px;
-			}
-			
-			h1 {
-			font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 72px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1397ae), to(#17b5d1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  text-shadow: 0px 0px 10px ##CCC;
-filter: dropshadow(color=##CCC, offx=0, offy=0);
-margin: 25px 0 0;
-padding:0;
-}
-			
-			#search{
-				width: 400px;
-				margin: 0 auto;
-				position: relative;
-				left: 30px;
-				top:20px;
-				height: 80px;
-				display: block;
-				
-			}
-			
-			#input-search{
-				width: 333px;
-				font-size: 26px;
-				margin: 0;
-				margin-top: 10px;
-				color: #CCC;
-				display: inline;
-				padding: 0;
-				height: 34px;
-			}
-			
-
-
-			
-			#search a.go{
-				width:40px;
-				height: 35px;
-				background: url(images/go_sprite.gif) no-repeat;
-				background-position: 0 0;
-				margin: 0;
-				padding: 0;
-				margin-top: -30px;
-				display: inline-block;
-				position: relative;
-				top:-18px;
-				
-			}
-			
-			#search a.go:hover{
-				background-position: 0 -35px;
-			}
-			
-			a.positive{
-				font-weight: bold;
-				color: #17b5d1;
-			}
-		
-			a.negative{
-				font-weight: bold;
-				color: #3d0e42;
-			}
-			
-			#search p{font-weight: bold; font-size: 22px; letter-spacing: -.05em; text-align: left; margin: 0; padding: 0;}
-			.feel{font-family: "Satisfy","Helvetica Neue",Helvetica,Arial,sans-serif; color:#ec5f00; }
-			
-			.ui-slider ol, .ui-slider dl{display: none;}
-			
-			.tooltip{
-				width: 250px;
-			}
-			
-			.tooltip p{
-				padding: 15px;
-				background: #FFF;
-				/* width: 150px; */
-				font-size: 11px;
-				display: block;
-			}
-			
-			.tooltip-arrow{
-				background: url(images/tooltipBg.png) no-repeat;
-				width: 10px;
-				height: 10px;
-				margin: auto;
-			}
-			
-			#graph{
-				width: 428px;
-				height: 400px;
-				margin: 50px auto -50px;
-				display: block;
-				clear: both;
-			}
-			
-			
-		</style>
-		
 		
 	<script type="text/javascript">
 		$(function(){
@@ -235,7 +95,7 @@ padding:0;
 
 <div id="wrap">
 
-	<div id="logo">&nbsp;</div>
+	<div id="logo"><a href="/" title="Reel Trend">Reel Trend</a></div>
 
 			<div id="search">
 			<p>How does the internet <span class="feel">feel</span> about...</p>
