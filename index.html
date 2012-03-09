@@ -190,7 +190,8 @@ padding:0;
 				var $this = $(this);
 				var oText = $this.text();
 				$this.css('color', '#000');
-				$this.text('');
+				if($this.val() == "See what's trending now")
+					$this.val('');
 			});
 			
 			//fix color 
@@ -279,8 +280,7 @@ padding:0;
 			
 			<div id="graph" style="width: 428px; height: 256px; margin: 0 auto"></div>
 			<div id="wordcloud" style="width: 428px; height: 256px; margin: 0 auto"></div>
-			<div id="mainWord" style="width: 428px; height: 256px; margin: 0 auto"></div>
-
+		
 			</div>
 </body>
 </html>

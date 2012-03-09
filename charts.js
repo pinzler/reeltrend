@@ -165,9 +165,13 @@ function drawThis() {
        		req.open("GET", "funkings.json", true);
        else if (term=="21 Jump Street")
        		req.open("GET", "21jump.json", true);
+       else if (term=="Sleepwalk with Me")
+       		req.open("GET", "sleepwalk.json", true);
        else	
+       	{
+       		$("h1").text("We are in BETA.  Search may take some time.");
        		req.open("GET", "search.php?startdate=0&enddate=-5&term=" + encodeURIComponent(term), true);
-       
+		}       	
        req.onreadystatechange = function() {
                
                if (req.readyState == 4) {
