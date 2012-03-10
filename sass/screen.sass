@@ -45,30 +45,34 @@ a
 p 
   font-size: $sixteen
 			
-#wrap 
-  background: url(../images/enterpriseBg.png) repeat-y
+.wrapper,
+#footer
   margin: 0 auto
   position: relative	
-  width: 915px
-			
-						
-.front #wrap
-  width: 515px
-  background: url(../images/wrapBg.png) repeat-y
-							
+
+.wrapper,
+#footer
+  width: $wrapper-width
+  background: url(../images/enterpriseBg.png) repeat-y
+  .front &
+    width: 515px
+    background: url(../images/wrapBg.png) repeat-y
+
 header 
   clear: both
   
-footer
-  font-size: $twelve
-
 // compensate for the background img on wrap
 #main,
-footer,
 header
   margin: 0 $content-left-lg
   .front &
     margin: 0 $content-left-sm
+
+footer[role="contentinfor"]
+  margin: $triple 0 $vs 0
+  font-size: $twelve
+  text-align: center
+
 
 [role="branding"] p 
   margin: 0 0 40px 120px 0 !important
@@ -89,6 +93,7 @@ aside h2
   border-top: 1px solid #fff
   padding: 20px 0 0 0
 
+// aside
 .press 
   ul
     +inline-block-list
@@ -101,6 +106,18 @@ aside h2
 .business-week
   +replace-text-with-dimensions("logo-business-week.jpg")
 
+//aside
+blockquote
+  p
+    margin-bottom: $half
+    font-size: $fourteen
+
+cite
+  p
+    margin: 0
+    text-align: right
+    padding-left: $vh
+    font-size: $thirteen
 
 nav 
   background: #d5cdda
