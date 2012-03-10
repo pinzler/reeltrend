@@ -1,0 +1,86 @@
+// This is where site specific variables are set.
+
+// Imports
+@import partials/defaults
+
+// Color Swatches
+$black: lighten($true-black, 1)
+$white: $true-white
+
+$grey: lighten($black, 69)
+$reddish-grey: rgb(177,101,91)
+$red: rgb(249,93,68)
+$dark-red: rgb(221,38,8)
+$brown: rgb(64,45,37)
+
+$blue: rgb(51,102,204)
+
+// Link Colors
+$menu-link-color: +lighten($black, 47)
+$menu-link-active: rgb(0,6,21)
+$content-link-color: $blue
+
+// Colors for CSS3 specific properties
+$text-shadow-dark: rgba(#105f87, .25)
+$box-shadow: opacify($black, .13)
+
+// Vertical Rhythm
+// 16*2.5 = 40 
+$vh: 40px // 40px
+$vs: 10px // 16px
+
+$border: 1px solid $grey
+
+// Vertical Rhythm
+  @see _vars.sass
+  @TODO either use compass!!! or set defaults correctly.
+  This code should be in _defaults.sass
+$double: $vs*2
+$triple: $vs*3
+$half: $vs/2
+$third: $vs/3
+$quarter: $vs/4
+
+=sans
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+=serif
+  font-family: Georgia, "Times New Roman", serif
+  
+=meta
+  +sans
+  text-transform: capitalize
+  color: $grey
+  font-size: $twelve
+
+// More links  
+=more
+  color: $orange
+  font-size: $sixteen
+  font-weight: $bold
+  +sans
+  +uppercase
+  
+//Content Box Borders
+=content-border
+  border: $border
+
+=gradient-light
+  +background-image(linear-gradient($white, darken($white, 11)))  
+
+=gradient-dark
+  +background-image(linear-gradient($black, darken($white, 44)))  
+
+=text-shadow-dark($fs:$thirteen, $color: $white)
+  +single-text-shadow
+  font-size: $fs
+  color: $color
+  
+// Mixin to top level  
+=header-with-gradient-dark
+  +gradient-dark
+  .title
+    color: $white
+    font-size: $fourteen
+    font-weight: $demi-bold
+    text-align: $center

@@ -1,0 +1,304 @@
+/* line 10, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -136px;
+}
+/* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 136px;
+}
+
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 136px;
+}
+
+/* line 51, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body {
+  font-size: 100%;
+  line-height: 1em;
+}
+
+/* line 55, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html > body {
+  font-size: 16px;
+}
+
+/* line 4, ../sass/screen.sass */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/screen.sass */
+body {
+  color: #47352b;
+  font-size: 62.5%;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(../images/subtle_zebra_3d.png);
+}
+
+/* line 17, ../sass/screen.sass */
+fieldset {
+  border: 0;
+  margin: -20px 50px 100px 50px;
+  height: 3em;
+}
+
+/* line 27, ../sass/screen.sass */
+label {
+  font-weight: normal;
+  float: left;
+  margin-right: 0.5em;
+  font-size: 1.1em;
+}
+
+/* line 34, ../sass/screen.sass */
+select {
+  margin-right: 1em;
+  float: left;
+  display: none;
+}
+
+/* line 40, ../sass/screen.sass */
+.ui-slider {
+  clear: both;
+  top: 5em;
+}
+
+/* line 45, ../sass/screen.sass */
+a {
+  color: #ec5f00;
+}
+
+/* line 49, ../sass/screen.sass */
+p {
+  margin: 0 40px;
+  font-size: 16px;
+}
+
+/* line 54, ../sass/screen.sass */
+#wrap {
+  background: url(../images/enterpriseBg.png) repeat-y;
+  margin: 0 auto;
+  position: relative;
+  width: 915px;
+}
+
+/* line 61, ../sass/screen.sass */
+.front #wrap {
+  width: 515px;
+  background: url(../images/wrapBg.png) repeat-y;
+}
+
+/* line 65, ../sass/screen.sass */
+header {
+  clear: both;
+}
+
+/* line 69, ../sass/screen.sass */
+[role="branding"] p {
+  margin: 0 0 40px 120px 0 !important;
+  text-align: right;
+  width: 80%;
+}
+
+/* line 75, ../sass/screen.sass */
+aside h2 {
+  margin: 0 40px 10px;
+  border-top: 1px solid white;
+  padding: 20px 0 0 0;
+}
+
+/* line 81, ../sass/screen.sass */
+nav {
+  background: #d5cdda;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 87, ../sass/screen.sass */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  float: right;
+}
+
+/* line 95, ../sass/screen.sass */
+nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 100, ../sass/screen.sass */
+nav li a {
+  color: #48362c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* line 106, ../sass/screen.sass */
+#logo {
+  background: url(../images/logo.png) no-repeat;
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 120px;
+  height: 117px;
+}
+
+/* line 114, ../sass/screen.sass */
+#logo a {
+  text-indent: -9999px;
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 117px;
+}
+
+/* line 121, ../sass/screen.sass */
+#results {
+  display: none;
+}
+
+/* line 124, ../sass/screen.sass */
+.result {
+  font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1397ae), to(#17b5d1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 10px #cccccc;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+/* line 138, ../sass/screen.sass */
+#search {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  height: 80px;
+  display: block;
+}
+
+/* line 149, ../sass/screen.sass */
+#input-search {
+  width: 333px;
+  font-size: 26px;
+  margin: 0;
+  margin-top: 10px;
+  color: #cccccc;
+  display: inline;
+  padding: 0;
+  height: 34px;
+}
+
+/* line 160, ../sass/screen.sass */
+#search .go {
+  width: 40px;
+  height: 35px;
+  background: url(../images/go_sprite.gif) no-repeat;
+  background-position: 0 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: none;
+  text-indent: -9999px;
+}
+
+/* line 171, ../sass/screen.sass */
+#search a.go:hover {
+  background-position: 0 -35px;
+}
+
+/* line 174, ../sass/screen.sass */
+a.positive {
+  font-weight: bold;
+  color: #17b5d1;
+}
+
+/* line 178, ../sass/screen.sass */
+a.negative {
+  font-weight: bold;
+  color: #3d0e42;
+}
+
+/* line 182, ../sass/screen.sass */
+#search p {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 190, ../sass/screen.sass */
+.feel {
+  font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ec5f00;
+}
+
+/* line 194, ../sass/screen.sass */
+.ui-slider ol, .ui-slider dl {
+  display: none;
+}
+
+/* line 197, ../sass/screen.sass */
+.tooltip {
+  width: 250px;
+}
+
+/* line 200, ../sass/screen.sass */
+.tooltip p {
+  padding: 15px;
+  background: white;
+  /* width: 150px */
+  font-size: 11px;
+  display: block;
+}
+
+/* line 208, ../sass/screen.sass */
+.tooltip-arrow {
+  background: url(../images/tooltipBg.png) no-repeat;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+}
+
+/* line 214, ../sass/screen.sass */
+#graph {
+  width: 428px;
+  margin: 50px auto -50px;
+  display: block;
+  clear: both;
+}
+
+/* line 221, ../sass/screen.sass */
+#wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
+  text-shadow: 0px 1px 1px #cccccc;
+}
+
+/* line 224, ../sass/screen.sass */
+#wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
+  text-shadow: 0px 1px 1px white;
+}

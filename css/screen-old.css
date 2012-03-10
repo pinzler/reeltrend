@@ -1,6 +1,10 @@
 		body, html{width: 100%; height: 100%; margin: 0; padding: 0;}
 		
-		body {font-size: 62.5%; font-family:"Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif; }
+		body {
+		  color: #47352b;
+		  font-size: 62.5%; 
+		  font-family:"Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif; 
+		  }
 		
 		fieldset { border:0; margin: -20px 50px 100px 50px; height: 3em;}	
 		fieldset a{border:none;}
@@ -14,19 +18,27 @@
 				padding: 0;
 				background: url(../images/subtle_zebra_3d.png);
 			}
+  a {
+    color: #ec5f00;
+  }
 			
 	p {
 		margin: 0 40px;
 		font-size: 16px;
 	}
 			
-			#wrap{
-				width: 515px;
-				margin: 0 auto;
-				background: url(../images/wrapBg.png) repeat-y;
-				position: relative;
-			}	
-			
+#wrap {
+	background: url(../images/enterpriseBg.png) repeat-y;
+	margin: 0 auto;
+	position: relative;	
+	width: 915px;
+}			
+						
+.front #wrap{
+	width: 515px;
+	background: url(../images/wrapBg.png) repeat-y;
+}	
+						
 header {
   clear: both;
 }
@@ -55,7 +67,6 @@ nav ul {
   list-style: none;
   list-style-type: none;
   float: right;
-  display: none;
 }
 
 nav li {
