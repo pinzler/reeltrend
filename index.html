@@ -21,10 +21,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <!-- CSS: implied media=all -->
-  <!--
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
   	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-  	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'> -->
+  	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 
 
   <!-- CSS concatenated and minified via ant build script-->
@@ -46,21 +45,42 @@
 <body>
 
   <div id="wrap">
+     <nav> 
+         <ul>
+             <li><a href="features.html">Features</a></li>
+             <li><a href="pricing.html">Pricing</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>     
     <header>
+      	<div id="logo"><a href="/" title="Reel Trend">ReelTrend</a></div>
+
+        <hgroup role="branding">
+            <p><strong>Emotional Analytics for the Film Industry</strong></p>
+            <p>Movies evoke emotions. Moviegoers are broadcasting how they feel about films every second of every day, but it’s not in polls or focus groups, it’s scattered across the social web.</p> 
+            <p class="last">ReelTrend captures these conversations allowing you focus your efforts where the will have the biggest impact. RealTrend keeps you on top of the emotional pulse of your audience.</p>  
+            
+            <p><a href="about.html" title="Watch our video to learn more">Learn more</a></p>
+        </hgroup>
+
+      			<div id="search">
+      			<p>How does the internet <span class="feel">feel</span> about...</p>
+      				<input type="search" id='input-search' value="See what's trending now">
+      				<input type="button" value="Search" class="go" onClick="drawThis();" />
+      			</div>
 
     </header>
     <div id="main" role="main">
-
-  	<div id="logo"><a href="/" title="Reel Trend">Reel Trend</a></div>
-
-  			<div id="search">
-  			<p>How does the internet <span class="feel">feel</span> about...</p>
-  				<input type="text" id='input-search' value="See what's trending now">
-  				<a href="#" class="go" onClick="drawThis();">&nbsp;</a>
-  			</div>
-
-  			<h1 class="result ">&nbsp;</h1>
-  			<div id="time-slider">
+        <h1 class="result">&nbsp;</h1>
+  		
+		<div class="tooltip">
+    	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    	    <div class="tooltip-arrow">&nbsp;</div>
+	    </div>
+		<p>People on the internet are talking about <span class='bold'>The Artist</span>. 52% of instances are <a href="#" class="positive">positive</a>, 23% of instances are <a href="#" class="negative">negative</a> and 25% of instances are neutral.</p>
+  			
+  		<div id="time-slider">
   	<form action="#">
   		<fieldset>
   			<!-- <label for="valueAA">From:</label> -->
@@ -91,12 +111,40 @@
 
   	</div>
 
-  			<div id="graph" style="width: 428px; height: 256px; margin: 0 auto"></div>
-  			<div id="wordcloud" style="width: 428px; height: 256px; margin: 0 auto"></div>
+	<div id="graph"></div>
+	<div id="wordcloud"></div>
+  			
+  	<aside class="press">
+        <h2>ReelTrend has been Featured In</h2>
+            <ul>
+            <li><a href="" title="" class="">Business Week</a></li>
+            <li><a href="" title="">Fox News</a></li>
+        </ul>    
+  	</aside>		
+  	
+  	<aside class="testimonials">
+  	    <h2>What People Are Saying</h2>
+  	    <blockquote>
+  	        <p>ReelTrend is to focus group research what color was to black &amp; white.  The future of market research for filmmakers is here.</p>
+  	        <cite><p>Matthew C. Mills, Emmy-Winning Executive Producer/Director at Spacestation</p></cite>
+  	    </blockquote>    
+  	    
+  	    <blockquote>
+  	        <p>As an actor I want to see as many movies as possible. But who has the time to read multi-paragraph reviews for large handfull of movies?  This simple, straightforward, no frills system of reviewing will help to easily separate the cream.</p>
+  	        <cite><p>Andrew Kaempfer</p></cite>
+  	    </blockquote>
 
+  	    <blockquote>
+  	        <p>I would definitely be interested in trying it out</p>
+  	        <cite><p>Ramona Pringle, Producer for PBS Frontline’s Digital Nation </p></cite>
+  	    </blockquote>
+
+  	    
+  	</aside>    
+  			
     </div>
     <footer>
-
+        <p>&copy; 2011 ReelTrend Born on StartUpBus <span><a href="http://www.twitter.com/#/ReelTrend">Follow @ReelTrend</a> for our true sentiment.</p>
     </footer>
   </div> <!--! end of #container -->
 

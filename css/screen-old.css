@@ -15,35 +15,76 @@
 				background: url(../images/subtle_zebra_3d.png);
 			}
 			
-			p{
-				margin: 0 40px;
-				font-size: 16px;
-			}
+	p {
+		margin: 0 40px;
+		font-size: 16px;
+	}
 			
 			#wrap{
 				width: 515px;
-				height: 100%;
-				min-height: 900px;
 				margin: 0 auto;
 				background: url(../images/wrapBg.png) repeat-y;
 				position: relative;
 			}	
 			
-			#logo{
-				background: url(../images/logo.png) no-repeat;
-				position: absolute;
-				left: -50px;
-				width:120px;
-				height: 117px;
-			}
-			
-			#logo a {
-			  text-indent: -9999px;
-			  position: absolute;
-			  display: block;
-				width:120px;
-				height: 117px;			  
-			}
+header {
+  clear: both;
+}
+
+[role="branding"] p {
+  margin: 0 0 40px 120px 0 !important;
+  text-align: right;
+  width: 80%;
+}
+
+aside h2 {
+  margin: 0 40px 10px;
+  border-top: 1px solid #fff;
+  padding: 20px 0 0 0;
+}
+
+nav {
+  background: #d5cdda;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  float: right;
+  display: none;
+}
+
+nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+nav li a {
+  color: #48362c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#logo{
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	top: 5px;
+	left: -50px;
+	width:120px;
+	height: 117px;
+}
+
+#logo a {
+  text-indent: -9999px;
+  position: absolute;
+  display: block;
+	width:120px;
+	height: 117px;			  
+}
 			
   .result {
     font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -81,26 +122,21 @@
 				height: 34px;
 			}
 			
-
-
+#search .go{
+	width:40px;
+	height: 35px;
+	background: url(../images/go_sprite.gif) no-repeat;
+	background-position: 0 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border: none;
+	text-indent: -9999px;
+}
 			
-			#search a.go{
-				width:40px;
-				height: 35px;
-				background: url(../images/go_sprite.gif) no-repeat;
-				background-position: 0 0;
-				margin: 0;
-				padding: 0;
-				margin-top: -30px;
-				display: inline-block;
-				position: relative;
-				top:-18px;
-				
-			}
-			
-			#search a.go:hover{
-				background-position: 0 -35px;
-			}
+#search a.go:hover {
+	background-position: 0 -35px;
+}
 			
 			a.positive{
 				font-weight: bold;
@@ -136,13 +172,12 @@
 				margin: auto;
 			}
 			
-			#graph{
-				width: 428px;
-				height: 400px;
-				margin: 50px auto -50px;
-				display: block;
-				clear: both;
-			}
+#graph{
+	width: 428px;
+	margin: 50px auto -50px;
+	display: block;
+	clear: both;
+}
 			
       #wordcloud {
       }

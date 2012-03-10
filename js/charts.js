@@ -170,7 +170,7 @@ function drawThis() {
        else	
        	{
        		$("h1").text("We are in BETA.  Search may take some time.");
-       		req.open("GET", "search.php?startdate=0&enddate=-5&term=" + encodeURIComponent(term), true);
+       		req.open("GET", "../search.php?startdate=0&enddate=-5&term=" + encodeURIComponent(term), true);
 		}       	
        req.onreadystatechange = function() {
                
