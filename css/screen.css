@@ -46,18 +46,19 @@ body, html {
 body {
   color: #47352b;
   font-size: 62.5%;
+  line-height: 1.4em;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url(../images/subtle_zebra_3d.png);
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 18, ../sass/screen.sass */
 fieldset {
   border: 0;
   margin: -20px 50px 100px 50px;
   height: 3em;
 }
 
-/* line 27, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 label {
   font-weight: normal;
   float: left;
@@ -65,31 +66,30 @@ label {
   font-size: 1.1em;
 }
 
-/* line 34, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 select {
   margin-right: 1em;
   float: left;
   display: none;
 }
 
-/* line 40, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 .ui-slider {
   clear: both;
   top: 5em;
 }
 
-/* line 45, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 a {
   color: #ec5f00;
 }
 
-/* line 49, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 p {
-  margin: 0 40px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
-/* line 54, ../sass/screen.sass */
+/* line 53, ../sass/screen.sass */
 #wrap {
   background: url(../images/enterpriseBg.png) repeat-y;
   margin: 0 auto;
@@ -97,85 +97,105 @@ p {
   width: 915px;
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 .front #wrap {
   width: 515px;
   background: url(../images/wrapBg.png) repeat-y;
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 header {
   clear: both;
 }
 
-/* line 69, ../sass/screen.sass */
+/* line 67, ../sass/screen.sass */
+footer {
+  font-size: 0.75em;
+}
+
+/* line 71, ../sass/screen.sass */
+#main,
+footer,
+header {
+  margin: 0 80px;
+}
+/* line 75, ../sass/screen.sass */
+.front #main, .front
+footer, .front
+header {
+  margin: 0 40px;
+}
+
+/* line 78, ../sass/screen.sass */
 [role="branding"] p {
   margin: 0 0 40px 120px 0 !important;
   text-align: right;
-  width: 80%;
 }
 
-/* line 75, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 aside h2 {
-  margin: 0 40px 10px;
+  margin: 0 0 10px;
   border-top: 1px solid white;
   padding: 20px 0 0 0;
 }
 
-/* line 81, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 nav {
   background: #d5cdda;
   height: 30px;
+  line-height: 30px;
   margin-bottom: 20px;
+  width: 827px;
+  padding-left: 80px;
 }
-
-/* line 87, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
+.front nav {
+  width: 427px;
+}
+/* line 96, ../sass/screen.sass */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
-  float: right;
 }
-
-/* line 95, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 nav li {
   float: left;
   margin-right: 10px;
 }
-
-/* line 100, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 nav li a {
   color: #48362c;
   font-size: 14px;
   text-decoration: none;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 #logo {
-  background: url(../images/logo.png) no-repeat;
   position: absolute;
-  top: 5px;
+  top: 0.9px;
   left: -50px;
-  width: 120px;
-  height: 117px;
 }
-
-/* line 114, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 #logo a {
-  text-indent: -9999px;
-  position: absolute;
   display: block;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/../images/logo.png?1331307350');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 120px;
   height: 117px;
 }
 
-/* line 121, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 #results {
   display: none;
 }
 
-/* line 124, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 .result {
   font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 72px;
@@ -189,7 +209,7 @@ nav li a {
   padding: 0;
 }
 
-/* line 138, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 #search {
   width: 400px;
   margin: 0 auto;
@@ -200,7 +220,7 @@ nav li a {
   display: block;
 }
 
-/* line 149, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 #input-search {
   width: 333px;
   font-size: 26px;
@@ -212,7 +232,7 @@ nav li a {
   height: 34px;
 }
 
-/* line 160, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #search .go {
   width: 40px;
   height: 35px;
@@ -225,24 +245,24 @@ nav li a {
   text-indent: -9999px;
 }
 
-/* line 171, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 #search a.go:hover {
   background-position: 0 -35px;
 }
 
-/* line 174, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 a.positive {
   font-weight: bold;
   color: #17b5d1;
 }
 
-/* line 178, ../sass/screen.sass */
+/* line 174, ../sass/screen.sass */
 a.negative {
   font-weight: bold;
   color: #3d0e42;
 }
 
-/* line 182, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 #search p {
   font-weight: bold;
   font-size: 22px;
@@ -252,23 +272,23 @@ a.negative {
   padding: 0;
 }
 
-/* line 190, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 .feel {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ec5f00;
 }
 
-/* line 194, ../sass/screen.sass */
+/* line 190, ../sass/screen.sass */
 .ui-slider ol, .ui-slider dl {
   display: none;
 }
 
-/* line 197, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 .tooltip {
   width: 250px;
 }
 
-/* line 200, ../sass/screen.sass */
+/* line 196, ../sass/screen.sass */
 .tooltip p {
   padding: 15px;
   background: white;
@@ -277,7 +297,7 @@ a.negative {
   display: block;
 }
 
-/* line 208, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 .tooltip-arrow {
   background: url(../images/tooltipBg.png) no-repeat;
   width: 10px;
@@ -285,7 +305,7 @@ a.negative {
   margin: auto;
 }
 
-/* line 214, ../sass/screen.sass */
+/* line 210, ../sass/screen.sass */
 #graph {
   width: 428px;
   margin: 50px auto -50px;
@@ -293,12 +313,12 @@ a.negative {
   clear: both;
 }
 
-/* line 221, ../sass/screen.sass */
+/* line 217, ../sass/screen.sass */
 #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
   text-shadow: 0px 1px 1px #cccccc;
 }
 
-/* line 224, ../sass/screen.sass */
+/* line 220, ../sass/screen.sass */
 #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
   text-shadow: 0px 1px 1px white;
 }

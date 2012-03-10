@@ -10,6 +10,7 @@ body, html
 body 
   color: #47352b
   font-size: 62.5% 
+  line-height: 1.4em
   font-family: "Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif 
   background: url(../images/subtle_zebra_3d.png)
 
@@ -47,9 +48,7 @@ a
 
 		
 p 
-  margin: 0 40px
-  font-size: 16px
-
+  font-size: $sixteen
 			
 #wrap 
   background: url(../images/enterpriseBg.png) repeat-y
@@ -64,59 +63,56 @@ p
 							
 header 
   clear: both
+  
+footer
+  font-size: $twelve
 
+// compensate for the background img on wrap
+#main,
+footer,
+header
+  margin: 0 $content-left-lg
+  .front &
+    margin: 0 $content-left-sm
 
 [role="branding"] p 
   margin: 0 0 40px 120px 0 !important
   text-align: right
-  width: 80%
-
 
 aside h2 
-  margin: 0 40px 10px
+  margin: 0 0 10px
   border-top: 1px solid #fff
   padding: 20px 0 0 0
-
 
 nav 
   background: #d5cdda
   height: 30px
+  line-height: 30px
   margin-bottom: 20px
-
-
-nav ul 
-  margin: 0
-  padding: 0
-  list-style: none
-  list-style-type: none
-  float: right
-
-
-nav li 
-  float: left
-  margin-right: 10px
-
-
-nav li a 
-  color: #48362c
-  font-size: 14px
-  text-decoration: none
-
+  width: -$content-left-lg + 907px
+  padding-left: $content-left-lg
+  .front &
+    width: 507px - $content-left-lg
+  ul 
+    margin: 0
+    padding: 0
+    list-style: none
+    list-style-type: none
+  li 
+    float: left
+    margin-right: 10px
+    a 
+      color: #48362c
+      font-size: 14px
+      text-decoration: none
 
 #logo
-  background: url(../images/logo.png) no-repeat
   position: absolute
-  top: 5px
+  top: 0.9px
   left: -50px
-  width: 120px
-  height: 117px
-
-#logo a 
-  text-indent: -9999px
-  position: absolute
-  display: block
-  width: 120px
-  height: 117px			  
+  a 
+    display: block
+    +replace-text-with-dimensions("../images/logo.png") 
 
 #results 
   display: none
