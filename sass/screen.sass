@@ -42,6 +42,7 @@ select
   clear: both 
   top: 5em
 
+  font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif
 
 a 
   color: #ec5f00
@@ -79,10 +80,29 @@ header
   margin: 0 0 40px 120px 0 !important
   text-align: right
 
+#{headings()}
+  font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif
+  font-size: $eighteen
+  text-transform: capitsalize
+
+  
 aside h2 
-  margin: 0 0 10px
+  margin: 20px 0 10px
   border-top: 1px solid #fff
   padding: 20px 0 0 0
+
+.press 
+  ul
+    +inline-block-list
+  a
+    display: block
+
+.fox-news
+  +replace-text-with-dimensions("logo-fox-bis.jpg")
+
+.business-week
+  +replace-text-with-dimensions("logo-business-week.jpg")
+
 
 nav 
   background: #d5cdda
@@ -116,10 +136,9 @@ nav
 
 #results 
   display: none
-			
+
+// H1 homepage only			
 .result 
-  font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif
-  font-size: 72px
   background: -webkit-gradient(linear, left top, left bottom, from(#1397ae), to(#17b5d1))
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent

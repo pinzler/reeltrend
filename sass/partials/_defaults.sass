@@ -60,4 +60,25 @@ $true-black: rgb(0, 0, 0)
   border-left: $border
   &:first-child
     border-left: none
+    // Normalize all headings
+
+#{headings()}
+  font-weight: $book
+  padding: 0 
+  margin: 0
+
+ul, ol, dir
+  padding: 0 
+  margin: 0
+  +no-bullet 
+
+// Browser specific
+img a,
+a img
+  border: none
+
+figure
+  margin: 0
+  a
+    display: block    
       

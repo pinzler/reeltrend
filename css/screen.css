@@ -1,3 +1,34 @@
+/* line 65, ../sass/partials/_defaults.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 70, ../sass/partials/_defaults.sass */
+ul, ol, dir {
+  padding: 0;
+  margin: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+/* line 76, ../sass/partials/_defaults.sass */
+img a,
+a img {
+  border: none;
+}
+
+/* line 80, ../sass/partials/_defaults.sass */
+figure {
+  margin: 0;
+}
+/* line 82, ../sass/partials/_defaults.sass */
+figure a {
+  display: block;
+}
+
 /* line 10, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
@@ -77,19 +108,20 @@ select {
 .ui-slider {
   clear: both;
   top: 5em;
+  font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 46, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 a {
   color: #ec5f00;
 }
 
-/* line 50, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 p {
   font-size: 1em;
 }
 
-/* line 53, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 #wrap {
   background: url(../images/enterpriseBg.png) repeat-y;
   margin: 0 auto;
@@ -97,49 +129,109 @@ p {
   width: 915px;
 }
 
-/* line 60, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 .front #wrap {
   width: 515px;
   background: url(../images/wrapBg.png) repeat-y;
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 header {
   clear: both;
 }
 
-/* line 67, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 footer {
   font-size: 0.75em;
 }
 
-/* line 71, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 #main,
 footer,
 header {
   margin: 0 80px;
 }
-/* line 75, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 .front #main, .front
 footer, .front
 header {
   margin: 0 40px;
 }
 
-/* line 78, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 [role="branding"] p {
   margin: 0 0 40px 120px 0 !important;
   text-align: right;
 }
 
-/* line 82, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  text-transform: capitsalize;
+}
+
+/* line 89, ../sass/screen.sass */
 aside h2 {
-  margin: 0 0 10px;
+  margin: 20px 0 10px;
   border-top: 1px solid white;
   padding: 20px 0 0 0;
 }
 
-/* line 87, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
+.press ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+.press ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.press ul li {
+  *display: inline;
+}
+/* line 97, ../sass/screen.sass */
+.press a {
+  display: block;
+}
+
+/* line 100, ../sass/screen.sass */
+.fox-news {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/logo-fox-bis.jpg?1331389237');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 99px;
+  height: 50px;
+}
+
+/* line 103, ../sass/screen.sass */
+.business-week {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/logo-business-week.jpg?1331391027');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 200px;
+  height: 46px;
+}
+
+/* line 107, ../sass/screen.sass */
 nav {
   background: #d5cdda;
   height: 30px;
@@ -148,36 +240,36 @@ nav {
   width: 827px;
   padding-left: 80px;
 }
-/* line 94, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 .front nav {
   width: 427px;
 }
-/* line 96, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
 }
-/* line 101, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 nav li {
   float: left;
   margin-right: 10px;
 }
-/* line 104, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 nav li a {
   color: #48362c;
   font-size: 14px;
   text-decoration: none;
 }
 
-/* line 109, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 #logo {
   position: absolute;
   top: 0.9px;
   left: -50px;
 }
-/* line 113, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 #logo a {
   display: block;
   text-indent: -119988px;
@@ -190,15 +282,13 @@ nav li a {
   height: 117px;
 }
 
-/* line 117, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 #results {
   display: none;
 }
 
-/* line 120, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 .result {
-  font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 72px;
   background: -webkit-gradient(linear, left top, left bottom, from(#1397ae), to(#17b5d1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -209,7 +299,7 @@ nav li a {
   padding: 0;
 }
 
-/* line 134, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 #search {
   width: 400px;
   margin: 0 auto;
@@ -220,7 +310,7 @@ nav li a {
   display: block;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 #input-search {
   width: 333px;
   font-size: 26px;
@@ -232,7 +322,7 @@ nav li a {
   height: 34px;
 }
 
-/* line 156, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 #search .go {
   width: 40px;
   height: 35px;
@@ -245,24 +335,24 @@ nav li a {
   text-indent: -9999px;
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #search a.go:hover {
   background-position: 0 -35px;
 }
 
-/* line 170, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 a.positive {
   font-weight: bold;
   color: #17b5d1;
 }
 
-/* line 174, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 a.negative {
   font-weight: bold;
   color: #3d0e42;
 }
 
-/* line 178, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 #search p {
   font-weight: bold;
   font-size: 22px;
@@ -272,23 +362,23 @@ a.negative {
   padding: 0;
 }
 
-/* line 186, ../sass/screen.sass */
+/* line 205, ../sass/screen.sass */
 .feel {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ec5f00;
 }
 
-/* line 190, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 .ui-slider ol, .ui-slider dl {
   display: none;
 }
 
-/* line 193, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .tooltip {
   width: 250px;
 }
 
-/* line 196, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 .tooltip p {
   padding: 15px;
   background: white;
@@ -297,7 +387,7 @@ a.negative {
   display: block;
 }
 
-/* line 204, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .tooltip-arrow {
   background: url(../images/tooltipBg.png) no-repeat;
   width: 10px;
@@ -305,7 +395,7 @@ a.negative {
   margin: auto;
 }
 
-/* line 210, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 #graph {
   width: 428px;
   margin: 50px auto -50px;
@@ -313,22 +403,22 @@ a.negative {
   clear: both;
 }
 
-/* line 217, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
   text-shadow: 0px 1px 1px #cccccc;
 }
 
-/* line 220, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
   text-shadow: 0px 1px 1px white;
 }
 
-/* line 223, ../sass/screen.sass */
+/* line 242, ../sass/screen.sass */
 .border {
   border: 1px solid #b3b3b3;
 }
 
-/* line 226, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 .features #main img.border {
   margin-left: -20px;
 }
