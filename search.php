@@ -22,7 +22,6 @@ if(isset($_REQUEST['startdate'])) {
 			$enddate = $_REQUEST['enddate'];
 		}
 
-
 $username= 'root';
 $password= 'frubrev5ceruch';
 $database= 'twb';

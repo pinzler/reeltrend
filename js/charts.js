@@ -161,11 +161,11 @@ function drawThis() {
  var totalpos = 0;
  var totalneg = 0;
  var req = new XMLHttpRequest();
-       if (term=="Funeral Kings")
+       if (term.toLowerCase()=="funeral kings")
        		req.open("GET", "funkings.json", true);
-       else if (term=="21 Jump Street")
+       else if (term.toLowerCase()=="21 jump street")
        		req.open("GET", "21jump.json", true);
-       else if (term=="Sleepwalk with Me")
+       else if (term.toLowerCase()=="sleepwalk with me")
        		req.open("GET", "sleepwalk.json", true);
        else	
        	{
