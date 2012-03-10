@@ -85,6 +85,10 @@ nav li a {
 	width:120px;
 	height: 117px;			  
 }
+
+#results {
+  display: none;
+}
 			
   .result {
     font-family: "Anton","Helvetica Neue",Helvetica,Arial,sans-serif;
