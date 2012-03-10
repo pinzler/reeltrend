@@ -164,14 +164,21 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitsalize;
 }
 
-/* line 83, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
+h1 {
+  font-size: 1.375em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* line 87, ../sass/screen.sass */
 aside h2 {
   margin: 20px 0 10px;
   border-top: 1px solid white;
   padding: 20px 0 0 0;
 }
 
-/* line 89, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 .press ul {
   margin: 0;
   padding: 0;
@@ -195,12 +202,12 @@ aside h2 {
 .press ul li {
   *display: inline;
 }
-/* line 91, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 .press a {
   display: block;
 }
 
-/* line 94, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .fox-news {
   text-indent: -119988px;
   overflow: hidden;
@@ -212,7 +219,7 @@ aside h2 {
   height: 50px;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .business-week {
   text-indent: -119988px;
   overflow: hidden;
@@ -224,7 +231,7 @@ aside h2 {
   height: 46px;
 }
 
-/* line 101, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 nav {
   background: #d5cdda;
   height: 30px;
@@ -233,36 +240,36 @@ nav {
   width: 827px;
   padding-left: 80px;
 }
-/* line 108, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 .front nav {
   width: 427px;
 }
-/* line 110, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
 }
-/* line 115, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 nav li {
   float: left;
   margin-right: 10px;
 }
-/* line 118, ../sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 nav li a {
   color: #48362c;
   font-size: 14px;
   text-decoration: none;
 }
 
-/* line 123, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 #logo {
   position: absolute;
   top: 0.9px;
   left: -50px;
 }
-/* line 127, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 #logo a {
   display: block;
   text-indent: -119988px;
@@ -275,12 +282,12 @@ nav li a {
   height: 117px;
 }
 
-/* line 131, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 #results {
   display: none;
 }
 
-/* line 135, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 .result {
   background: -webkit-gradient(linear, left top, left bottom, from(#1397ae), to(#17b5d1));
   -webkit-background-clip: text;
@@ -295,7 +302,7 @@ nav li a {
   line-height: 1em;
 }
 
-/* line 149, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 #search {
   width: 400px;
   margin: 0 auto;
@@ -306,7 +313,7 @@ nav li a {
   display: block;
 }
 
-/* line 160, ../sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 #input-search {
   width: 333px;
   font-size: 26px;
@@ -318,7 +325,7 @@ nav li a {
   height: 34px;
 }
 
-/* line 171, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 #search .go {
   width: 40px;
   height: 35px;
@@ -331,24 +338,24 @@ nav li a {
   text-indent: -9999px;
 }
 
-/* line 182, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #search a.go:hover {
   background-position: 0 -35px;
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 a.positive {
   font-weight: bold;
   color: #17b5d1;
 }
 
-/* line 189, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 a.negative {
   font-weight: bold;
   color: #3d0e42;
 }
 
-/* line 193, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 #search p {
   font-weight: bold;
   font-size: 22px;
@@ -358,34 +365,34 @@ a.negative {
   padding: 0;
 }
 
-/* line 201, ../sass/screen.sass */
+/* line 205, ../sass/screen.sass */
 .feel {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ec5f00;
 }
 
-/* line 205, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 #time-slider {
   display: none;
 }
 
-/* line 208, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .ui-slider {
   clear: both;
   top: 5em;
   font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 212, ../sass/screen.sass */
+/* line 216, ../sass/screen.sass */
 .ui-slider ol, .ui-slider dl {
   display: none;
 }
 
-/* line 215, ../sass/screen.sass */
+/* line 219, ../sass/screen.sass */
 .tooltip {
   width: 250px;
 }
 
-/* line 218, ../sass/screen.sass */
+/* line 222, ../sass/screen.sass */
 .tooltip p {
   padding: 15px;
   background: white;
@@ -394,7 +401,7 @@ a.negative {
   display: block;
 }
 
-/* line 226, ../sass/screen.sass */
+/* line 230, ../sass/screen.sass */
 .tooltip-arrow {
   background: url(../images/tooltipBg.png) no-repeat;
   width: 10px;
@@ -402,7 +409,7 @@ a.negative {
   margin: auto;
 }
 
-/* line 232, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 #graph {
   width: 428px;
   margin: 50px auto -50px;
@@ -410,22 +417,34 @@ a.negative {
   clear: both;
 }
 
-/* line 239, ../sass/screen.sass */
+/* line 243, ../sass/screen.sass */
 #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
   text-shadow: 0px 1px 1px #cccccc;
 }
 
-/* line 242, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
   text-shadow: 0px 1px 1px white;
 }
 
-/* line 245, ../sass/screen.sass */
+/* line 249, ../sass/screen.sass */
 .border {
   border: 1px solid #b3b3b3;
 }
 
-/* line 248, ../sass/screen.sass */
+/* line 252, ../sass/screen.sass */
 .features #main img.border {
   margin-left: -20px;
+}
+
+/* line 257, ../sass/screen.sass */
+td, th {
+  width: 20%;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+}
+
+/* line 262, ../sass/screen.sass */
+td:first-child {
+  width: auto;
 }
