@@ -287,12 +287,15 @@ nav li a {
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0px 0px 10px #cccccc;
+  text-shadow: 0px 0px 5px #cccccc;
+  filter: dropshadow(color=#cccccc, offx=0, offy=0);
   margin: 25px 0 0;
   padding: 0;
+  font-size: 68px;
+  line-height: 1em;
 }
 
-/* line 147, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 #search {
   width: 400px;
   margin: 0 auto;
@@ -303,7 +306,7 @@ nav li a {
   display: block;
 }
 
-/* line 158, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 #input-search {
   width: 333px;
   font-size: 26px;
@@ -315,7 +318,7 @@ nav li a {
   height: 34px;
 }
 
-/* line 169, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 #search .go {
   width: 40px;
   height: 35px;
@@ -328,24 +331,24 @@ nav li a {
   text-indent: -9999px;
 }
 
-/* line 180, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 #search a.go:hover {
   background-position: 0 -35px;
 }
 
-/* line 183, ../sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 a.positive {
   font-weight: bold;
   color: #17b5d1;
 }
 
-/* line 187, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 a.negative {
   font-weight: bold;
   color: #3d0e42;
 }
 
-/* line 191, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 #search p {
   font-weight: bold;
   font-size: 22px;
@@ -355,34 +358,34 @@ a.negative {
   padding: 0;
 }
 
-/* line 199, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 .feel {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ec5f00;
 }
 
-/* line 203, ../sass/screen.sass */
+/* line 205, ../sass/screen.sass */
 #time-slider {
   display: none;
 }
 
-/* line 206, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 .ui-slider {
   clear: both;
   top: 5em;
   font-family: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 210, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .ui-slider ol, .ui-slider dl {
   display: none;
 }
 
-/* line 213, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 .tooltip {
   width: 250px;
 }
 
-/* line 216, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 .tooltip p {
   padding: 15px;
   background: white;
@@ -391,7 +394,7 @@ a.negative {
   display: block;
 }
 
-/* line 224, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .tooltip-arrow {
   background: url(../images/tooltipBg.png) no-repeat;
   width: 10px;
@@ -399,7 +402,7 @@ a.negative {
   margin: auto;
 }
 
-/* line 230, ../sass/screen.sass */
+/* line 232, ../sass/screen.sass */
 #graph {
   width: 428px;
   margin: 50px auto -50px;
@@ -407,22 +410,22 @@ a.negative {
   clear: both;
 }
 
-/* line 237, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
   text-shadow: 0px 1px 1px #cccccc;
 }
 
-/* line 240, ../sass/screen.sass */
+/* line 242, ../sass/screen.sass */
 #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
   text-shadow: 0px 1px 1px white;
 }
 
-/* line 243, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 .border {
   border: 1px solid #b3b3b3;
 }
 
-/* line 246, ../sass/screen.sass */
+/* line 248, ../sass/screen.sass */
 .features #main img.border {
   margin-left: -20px;
 }
