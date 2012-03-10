@@ -26,7 +26,7 @@ if(isset($_REQUEST['startdate'])) {
 $username= 'root';
 $password= 'frubrev5ceruch';
 $database= 'twb';
-$domain = 'http://108.166.90.127/';
+$domain = 'localhost';
 
 $link=mysql_connect($domain,$username,$password);
 if (!$link) {
