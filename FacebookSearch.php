@@ -1,12 +1,5 @@
 <?
-/**
- * Wrapper class around the Twitter Search API for PHP
- * Based on the class originally developed by David Billingham
- * and accessible at http://twitter.slawcup.com/twitter.class.phps
- * @author Ryan Faerman <ryan.faerman@gmail.com>
- * @version 0.2
- * @package PHPTwitterSearch
- */
+//Twitter Search edited for FACEBOOK
 class FacebookSearch {
 	/**
 	 * Can be set to JSON (requires PHP 5.2 or the json pecl module) or XML - json|xml
